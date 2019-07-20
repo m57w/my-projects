@@ -1,0 +1,12 @@
+private void Drag_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effect = DragDropEffects.Move;
+
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
+        }
